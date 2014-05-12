@@ -14,8 +14,8 @@
         <div class="masthead">
             <ul class="nav nav-pills pull-right">
               <?php
-              $linkName=array("首頁","我的小主人","活動專頁","關於",$loginText);
-              $linkHref=array("./","master.php","https://www.facebook.com/IMYourAngel\" target=\"_blank","about.php",$loginUrl);
+              $linkName=array("首頁","投票","關於",$loginText);
+              $linkHref=array("./","list.php","about.php",$loginUrl);
               for($i=0;$i<sizeof($linkName);$i++){
                 echo '<li';
                 if(isset($linkActive)&&$i==$linkActive){
@@ -25,7 +25,7 @@
               }
               ?>
             </ul>
-            <h3 class="muted">IM Your Angel!</h3>
+            <h3 class="muted">資管好爸媽 ❤</h3>
         </div>
 
         <hr>
