@@ -70,4 +70,18 @@ function gender_trans($str){
       break;
   }
 }
+
+function voted($type){
+  if($user){
+    $query = "SELECT voted_".$type." from register WHERE fbid = '".$user."'";
+    $result = qMysql($query);
+    $row = mysql_fetch_row($result);
+    if($row[0] == 0){
+      return false;
+    }else{
+      return true;
+    }
+  }
+}
+
 ?>

@@ -7,6 +7,21 @@
 <!--    <link href="http://bootswatch.com/cyborg/bootstrap.min.css" rel="stylesheet" media="screen"> -->
     <link href="./css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="./css/angel.css" rel="stylesheet" media="screen">
+    <?php
+     if(isset($linkActive)&&$linkActive==1){
+    ?>
+    <script type="text/javascript">
+    function voteConfirm(cid, name){
+      if(window.confirm('你確定要投給 ' + name + ' 嗎?')){
+        document.location.href='vote.php?cid='+cid;
+      }else{
+        return false;
+      }
+    }
+    </script>
+    <?php
+     }
+    ?>
   </head>
   <body>
   <div class="container-narrow">
