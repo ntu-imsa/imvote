@@ -53,3 +53,7 @@ text-align: center;
 .candidate-box .candidate-name {
 margin-bottom: 10px;
 }
+
+.candidate-box .vote-btn {
+	margin-top: 10px;
+}
