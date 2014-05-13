@@ -71,16 +71,14 @@ function gender_trans($str){
   }
 }
 
-function voted($type){
+function voted($type, $user){
   if($user){
     $query = "SELECT voted_".$type." from register WHERE fbid = '".$user."'";
     $result = qMysql($query);
     $row = mysql_fetch_row($result);
-    if($row[0] == 0){
-      return false;
-    }else{
-      return true;
-    }
+    return $row[0];
+  }else{
+    return 0;
   }
 }
 
