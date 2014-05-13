@@ -6,20 +6,10 @@ if (!$user) {
   header("Location: ".$loginUrl);
 }
 
-$linkActive=1;
+$linkActive = 1;
+$linkActiveS = 0;
 include './lib/header.php';
-?>
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#">領票</a></li>
-  <li><a href="dad.php">好爸爸</a></li>
-  <li><a href="mom.php">好媽媽</a></li>
-  <?php
-  if(isAdmin($user)){
-    echo '<li><a href="list.php">負責人專區</a></li>';
-  }
-  ?>
-</ul>
-<?php
+
 if(!isset($_POST['stuid'])){
     $str="SELECT * FROM register WHERE fbid='".$user."';";
     $result=qMysql($str);

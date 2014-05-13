@@ -29,3 +29,26 @@
         </div>
 
         <hr>
+<?php
+if(isset($linkActiveS)){
+?>
+<ul class="nav nav-tabs">
+<?php
+$linkName=array("領票","好爸爸","好媽媽");
+$linkHref=array("join.php","dad.php","mom.php");
+for($i=0;$i<sizeof($linkName);$i++){
+  echo '<li';
+  if(isset($linkActiveS)&&$i==$linkActiveS){
+    echo ' class="active"';
+  }
+  echo '><a href="'.$linkHref[$i].'">'.$linkName[$i].'</a></li>';
+}
+
+  if(isAdmin($user)){
+    echo '<li><a href="list.php">負責人專區</a></li>';
+  }
+  ?>
+</ul>
+<?php
+}
+?>
