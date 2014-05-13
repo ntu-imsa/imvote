@@ -35,7 +35,7 @@ if(isset($linkActiveS)){
 <ul class="nav nav-tabs">
 <?php
 $linkName=array("領票","好爸爸","好媽媽");
-$linkHref=array("join.php","dad.php","mom.php");
+$linkHref=array("join.php","candidate.php?type=dad","candidate.php?type=mom");
 for($i=0;$i<sizeof($linkName);$i++){
   echo '<li';
   if(isset($linkActiveS)&&$i==$linkActiveS){
