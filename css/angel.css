@@ -46,12 +46,14 @@ margin-top:28px;
 
 .candidate-box {
 height: 200px;
-width: 200px;
+width: 195px;
 text-align: center;
+display: inline-block;
+margin-bottom: 50px;
 }
 
 .candidate-box .candidate-name {
-margin-bottom: 10px;
+margin-bottom: 3px;
 }
 
 .candidate-box .vote-btn {
