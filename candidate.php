@@ -40,7 +40,7 @@ if($voted != 0){
 		echo 'disabled ';
 }
 ?>vote-btn" onclick="voteConfirm('<?php echo $row['cid']."','".$row['name']; ?>')"><i class="icon-ok-sign icon-white"></i> 投給<?php
-if($type = 'mom'){
+if($type == 'mom'){
 	echo '她';
 }else{
 	echo '他';
