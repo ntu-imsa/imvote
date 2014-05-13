@@ -1,1 +1,55 @@
-body{padding-top:20px;padding-bottom:40px;}.container-narrow{margin:0 auto;max-width:800px;}.container-narrow>hr{margin:30px 0;}.hero-unit{margin:60px 0;text-align:center;color:white;font-weight:bold;text-shadow:2px 2px 2px black;background:url(../img/israel-bus.jpg);background-size:800px auto;}.hero-unit h1{font-size:72px;line-height:1;}.hero-unit .btn{font-size:21px;padding:14px 24px;}.form-join{max-width:500px;}.marketing{margin:60px 0;}.marketing p+h4{margin-top:28px;}
+body {
+padding-top:20px;
+padding-bottom:40px;
+}
+
+.container-narrow {
+max-width:800px;
+margin:0 auto;
+}
+
+.container-narrow>hr {
+margin:30px 0;
+}
+
+.hero-unit {
+text-align:center;
+color:#FFF;
+font-weight:700;
+text-shadow:2px 2px 2px #000;
+background:url(../img/israel-bus.jpg);
+background-size:800px auto;
+margin:60px 0;
+}
+
+.hero-unit h1 {
+font-size:72px;
+line-height:1;
+}
+
+.hero-unit .btn {
+font-size:21px;
+padding:14px 24px;
+}
+
+.form-join {
+max-width:500px;
+}
+
+.marketing {
+margin:60px 0;
+}
+
+.marketing p+h4 {
+margin-top:28px;
+}
+
+.candidate-box {
+height: 200px;
+width: 200px;
+text-align: center;
+}
+
+.candidate-box .candidate-name {
+margin-bottom: 10px;
+}

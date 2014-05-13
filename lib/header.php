@@ -44,8 +44,8 @@ for($i=0;$i<sizeof($linkName);$i++){
   echo '><a href="'.$linkHref[$i].'">'.$linkName[$i].'</a></li>';
 }
 
-  if(isAdmin($user)){
-    echo '<li><a href="list.php">負責人專區</a></li>';
+  if($eventEnded){
+    echo '<li><a href="result.php">結果</a></li>';
   }
   ?>
 </ul>
