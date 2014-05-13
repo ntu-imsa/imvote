@@ -82,4 +82,25 @@ function voted($type, $user){
   }
 }
 
+function registered($user){
+  if($user){
+    $query = "SELECT fbid from register WHERE fbid = '".$user."'";
+    $result = qMysql($query);
+    $row = mysql_fetch_row($result);
+    if($row[0] == $user){
+      return true;
+    }else{
+      return false;
+    }
+  }else{
+    return false;
+  }
+}
+
+function typeof($cid){
+  $query = "SELECT type FROM candidate WHERE cid = ".$cid;
+  $row = mysql_fetch_assoc(qMysql($query));
+  return $row['type'];
+}
+
 ?>
