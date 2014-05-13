@@ -14,7 +14,7 @@ include './lib/header.php';
 <div class="candidate-box">
 <div class="candidate-name">B02 涂靖雯</div>
 <img class="img-circle" height="150" width="150" src="http://graph.facebook.com/jingwen.tu/picture?type=large">
-<a role="button" class="btn btn-danger vote-btn">投給她</a>
+<a role="button" class="btn btn-danger vote-btn"><i class="icon-ok-sign icon-white"></i> 投給她</a>
 </div>
 </td>
 <?php } ?>
