@@ -2,8 +2,14 @@
 require './lib/facebook.php';
 require './lib/library.php';
 
-$linkActive = 1;
+$type = 'mom';
 $linkActiveS = 2;
+
+if(!isset($_GET['type'])||$_GET['type']!='mom'){
+	$type = 'dad';
+	$linkActiveS = 1;
+}
+$linkActive = 1;
 include './lib/header.php';
 ?>
 <table>
