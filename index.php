@@ -16,7 +16,7 @@ include './lib/header.php';
 星期四(5/15)~星期一(5/19)，資管好爸媽，溫馨開跑 ❤</p>
             <a class="btn btn-large btn-primary" href=<?php
             if($user){
-              echo '"master.php">前往投票';
+              echo '"join.php">前往投票';
             }else{
               echo '"'.$loginUrl.'">登入 Facebook';
             }

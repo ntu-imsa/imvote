@@ -5,6 +5,4 @@ $facebook = new Facebook(array(
 	'secret' => '',
 ));
 
-$eventEnded = false;
-
 ?>

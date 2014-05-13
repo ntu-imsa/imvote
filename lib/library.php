@@ -103,4 +103,8 @@ function typeof($cid){
   return $row['type'];
 }
 
+function eventEnded(){
+  return false;
+}
+
 ?>

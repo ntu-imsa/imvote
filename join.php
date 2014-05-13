@@ -15,8 +15,8 @@ if(!isset($_POST['stuid'])){
     $result=qMysql($str);
     $record=mysql_fetch_array($result);
     if($record[0]==''){
-      if($eventEnded){
-        echo '<h4>報名截止囉!詳情請洽負責人</h4>';
+      if(eventEnded()){
+        echo '<h4>投票截止囉!詳情請洽負責人</h4>';
         die();
       }
 ?>
@@ -57,8 +57,8 @@ if(msg==""){
 ?>
 <h4>領票成功 :)</h4>
 <p>快快去投票吧~~</p>
-<a role="button" href="dad.php" class="btn btn-large btn-primary">好爸爸</a>
-<a role="button" href="mom.php" class="btn btn-large btn-danger">好媽媽</a>
+<a role="button" href="candidate.php?type=dad" class="btn btn-large btn-primary">好爸爸</a>
+<a role="button" href="candidate.php?type=mom" class="btn btn-large btn-danger">好媽媽</a>
 <br><br>
 	Facebook 帳號:
         <div class="row-fluid">
