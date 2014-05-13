@@ -15,7 +15,7 @@
             <ul class="nav nav-pills pull-right">
               <?php
               $linkName=array("首頁","投票","關於",$loginText);
-              $linkHref=array("./","list.php","about.php",$loginUrl);
+              $linkHref=array("./","join.php","about.php",$loginUrl);
               for($i=0;$i<sizeof($linkName);$i++){
                 echo '<li';
                 if(isset($linkActive)&&$i==$linkActive){

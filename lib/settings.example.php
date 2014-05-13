@@ -4,4 +4,7 @@ $facebook = new Facebook(array(
 	'appId'  => '',
 	'secret' => '',
 ));
+
+$eventEnded = false;
+
 ?>
