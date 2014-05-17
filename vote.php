@@ -15,7 +15,7 @@ if(isset($_GET['cid'])){
 						$newVotes = $row['votes'] + 1;
 						$query = "UPDATE candidate SET votes = ".$newVotes." WHERE cid = ".$cid;
 						qMysql($query);
-						$query = "UPDATE register SET voted_".$type." = ".$cid;
+						$query = "UPDATE register SET voted_".$type." = ".$cid." WHERE fbid = ".$user;
 						qMysql($query);
 						$message = '投票成功!';
 						$target = 'candidate.php?type='.$type;
