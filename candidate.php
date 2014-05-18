@@ -23,7 +23,7 @@ while($row = mysql_fetch_assoc($result)){ ?>
 	echo substr($row['sid'],0,3);
 	echo ' ';
 	echo $row['name'];
-?></div>
+?> <span class="badge badge-important"><?php echo $row['votes'];?></span></div>
 <img class="img-circle" height="150" width="150" src="<?php echo $row['picture']; ?>">
 <a role="button" class="btn <?php
 if($voted == $row['cid']){
