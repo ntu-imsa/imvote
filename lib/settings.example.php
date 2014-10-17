@@ -5,4 +5,10 @@ $facebook = new Facebook(array(
 	'secret' => '',
 ));
 
+// Set database credentials
+define("DBHOST", "");
+define("DBNAME", "");
+define("DBUSER", "");
+define("DBPASS", "");
+
 ?>
